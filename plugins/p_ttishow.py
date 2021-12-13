@@ -38,7 +38,7 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('📢 Updates', url='https://t.me/TeamEvamaria')
+            InlineKeyboardButton('📢 Updates', url='https://t.me/chullan_movies_update')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -51,7 +51,7 @@ async def save_group(bot, message):
                     await (temp.MELCOW['welcome']).delete()
                 except:
                     pass
-            temp.MELCOW['welcome'] = await message.reply(f"<b>Hey , {u.mention}, Welcome to {message.chat.title}</b>")
+            temp.MELCOW['welcome'] = await message.reply(f"<b>ഹായ് , {u.mention}, {message.chat.title} ക്കിലേക്ക് സ്വാഗതം നിങ്ങൾ തിരഞ്ഞടതത് വളരെ നല്ല കാര്യം 😍😍. നമ്മുടെ അഡ്മിൻ പരുയുന്ന RULES AND REGULATIONS അനുസരിച്ചില്ലെങ്കിൽ ബാൻ കിട്ടുന്നതാണ് 😇</b>")
 
 
 @Client.on_message(filters.command('leave') & filters.user(ADMINS))
